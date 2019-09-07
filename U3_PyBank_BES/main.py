@@ -10,3 +10,9 @@
 # # # The average of the changes in "Profit/Losses" over the entire period
 # # # The greatest increase in profits (date and amount) over the entire period
 # # # The greatest decrease in losses (date and amount) over the entire period
+
+import os
+import csv
+
+# Locate the "budget_data.csv" and declare it's file path
+budgetcsv = os.path.join("..", "PyBank_Resources", "budget_data.csv")
