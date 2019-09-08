@@ -15,7 +15,7 @@ import os
 import csv
 
 # Locate the "budget_data.csv" and declare it's file path
-budgetcsv = os.path.join("..", "PyBankResources", "budget_data.csv")
+budgetcsv = os.path.join("..", "PyBank_Resources", "budget_data.csv")
 # print(os.path.join("..\PyBank_Resources", "budget_data.csv"))
 
 with open(budgetcsv, newline="") as csvfile:
@@ -75,7 +75,7 @@ f"Greatest Decrease in Profits: {min_month} - ${greatest_decrease}\n"
 
 print(financial_analysis)
 
-data_output = os.path.join("..", "PyBankOutput", "financial_analysis.txt")
+data_output = os.path.join("..\PyBank_Output", "financial_analysis.txt")
 
 #export to txt file
 with open(data_output, "w") as textfile:
