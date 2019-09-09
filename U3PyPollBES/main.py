@@ -55,7 +55,7 @@ li_percent = round(li_count/votes*100, 3)
 correy_percent = round(correy_count/votes*100, 3)
 tooley_percent = round(tooley_count/votes*100, 3)
 
-
+# The winner of the election based on popular vote.
 winner = max(khan_count, li_count, correy_count, tooley_count)
 if winner == khan_count:
     winner_name = "Khan"
@@ -69,9 +69,9 @@ elif winner == tooley_count:
 election_results = (
 f"Election Results\n"
 f"-------------------------------\n"
+# The total number of votes each candidate won
 f"Total Votes: {votes}\n"
 "-------------------------------\n"
-# The total number of votes each candidate won
 f"Khan: {khan_percent}%, {khan_count} Votes\n"
 f"Correy: {correy_percent}%, {correy_count} Votes\n"
 f"Li: {li_percent}%, {li_count} Votes\n"
